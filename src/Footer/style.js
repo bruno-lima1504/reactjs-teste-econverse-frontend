@@ -1,39 +1,56 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-    width: 100%;
+    max-width: 1280px;
     background-color: #2A2A2A;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 170px;
+        @media (max-width:500px) {
+        align-items: center;
+        justify-content: center;        
+    }
 ;
 `
 export const ContentContainer = styled.div`
-    width: 1280px;
+    width: 100%;
     height: 325px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
+    @media (max-width:500px) {
+        flex-direction: column-reverse;        
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const CopyRigthContainer = styled.div`
-    width: 1280px;
+    max-width: 1280px;
     height: 70px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;
+    @media (max-width:500px) {
+      height: auto;
+      flex-direction: column
+    } 
 `
 
 export const AboutFooter = styled.div`    
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    @media (max-width:500px) {
+        margin-top: 20px;
+    }
    
 `
 export const Title = styled.div`
@@ -60,17 +77,27 @@ export const IconstContainer = styled.div`
         width: 21px;
         height: 21px;
     }
+    @media (max-width:500px) {
+      margin-top: 20px;
+    }
 `
 
 export const InformationFooter = styled.div`
         display: flex;
         flex-direction: column;
         margin-top: 60px;
+
+        @media (max-width:500px) {
+            margin-top: 25px;
+        }
 `
 export const PaymentFooter = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    @media (max-width:500px) {
+      margin-top: 20px;
+    }
 `
 export const CopyRightText = styled.p`
     font-size: 10px;
@@ -81,6 +108,9 @@ export const CopyRightText = styled.p`
 export const LogosCopyRight = styled.img`
     max-width: 226px;
     max-height: 32px;
+    @media (max-width:500px) {
+      margin-top: 20px;
+    }
 `
 
 export const NewsletterContainer = styled.div`
@@ -94,6 +124,9 @@ export const NewsletterContainer = styled.div`
     align-items: center;
     padding: 35px;
     border-radius: 10px;
+    @media (max-width:500px) {
+      margin-top: 25px;
+    }
 `
 
 export const NewsletterTitle = styled.h3`

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-    max-width: 1280px;
-    height: 144px;    
+    max-width: 1280px;        
     margin: auto;
     display: flex;
     flex-direction: column;    
@@ -13,7 +12,16 @@ export const InfoContainer = styled.div`
     display: flex;
     padding: 0 120px;
     border-bottom: 1px solid #F0F0F0;
-    justify-content: space-evenly;  
+    justify-content: space-evenly; 
+    
+    @media (max-width:500px) {
+       padding: 0 10px; 
+       height: 35px;
+       align-items: center;
+       svg{
+                display:none;
+            }
+    }
 `
 export const InfoHeader = styled.div`
     display: flex;
@@ -26,6 +34,13 @@ export const InfoText = styled.p`
     font-weight: 500;
     color: #9F9F9F;
     margin-left: 10px;
+
+        @media (max-width:500px) {            
+            text-align: center;
+            margin-left: 0;
+            margin-right: 10px;            
+        }
+    
 `
 export const InfoSpan = styled.span`
     font-size: 12px;
@@ -39,19 +54,39 @@ export const NavigationHeader = styled.nav`
     align-items: center;
     padding: 0 56px;
     width: 100%;
-    justify-content: space-between;    
+    justify-content: space-between;
+    
+    @media (max-width:500px) {            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: max-content;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
 `
 
 export const Logo = styled.img`
     width: 139px;
     height: 50px;
     margin-right: 95px;
+
+    @media (max-width:500px) {            
+            margin: 0;
+            margin-bottom: 10px;
+        }
 `
 
 export const SearchProduct = styled.div`
     width: 657px;
     position: relative;
     margin-right: 26px;
+
+    @media (max-width:500px) {            
+           width: 400px;
+           margin: 0;
+           margin-bottom: 15px;
+        }
     
 `
 
@@ -77,10 +112,10 @@ export const SearchIcon = styled.a`
     z-index: 2;
 `
 
+
 export const Toolbar = styled.div`
     display: flex;
-    flex-direction: row;   
-
+    
    svg{             
         color: #9F9F9F;
         width: 32px;
@@ -89,46 +124,28 @@ export const Toolbar = styled.div`
         :hover{
         color:#F71963;
         font-weight: 600;  
-    }
-   } 
-`
-
-export const MenuHeader = styled.nav`
-    height: 40px;
-    width: 100%;
-    padding: 0 56px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.2); 
-`
-export const Links = styled.a`
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-right: 3.515%;
-    margin-left: 3.515%;
-    line-height: 18px;
-    text-align: center;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    color: #9F9F9F;
-    transition: all 0.3s;
-
-    svg{
-         margin-right: 10px;
-         width: 20px;
-         height: 20px;
-         transition: all 0.3;
-    }
-
-    :hover{
-        color:#F71963;
-        font-weight: 600;
-
-        svg{
-            color: gold;
         }
     }
+    
+    button{
+        display: none;
+    }
 
-  
+    @media (max-width:500px) {            
+            width:100%;
+            margin: 0;            
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+            button{
+                display: block;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                width: 32px;
+                height: 32px;
+            }
+            svg{
+                margin: 0;
+            }
+    }    
 `

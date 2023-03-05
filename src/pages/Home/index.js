@@ -8,13 +8,15 @@ import ProductOfferCard from "../../components/ProductOfferCard";
 import RelatedProducts from "../../components/RelatedProducts"; 
 import Footer from "../../Footer";
 
+import styled from "styled-components";
+
 export default function Home(){
     return(
-      <>
+      <HomeContainer>
         <Header />
         <Banner />
         <Categorioes />
-        <RelatedProducts render={false} />
+        <RelatedProducts renderMenu={true} />
         <PartnerSection />         
         <RelatedProducts />
         <ProductOfferCard />
@@ -22,6 +24,10 @@ export default function Home(){
         <RelatedProducts/>
         <Footer /> 
         <Modal />               
-      </>
+      </HomeContainer>
     )
 }
+
+const HomeContainer = styled.div`
+  max-width: 100%;
+`

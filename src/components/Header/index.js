@@ -1,9 +1,21 @@
+import { useState } from 'react'
+
 import * as C from './style'
-import { TbTruckDelivery, TbSearch, TbPackgeImport, TbHeart, TbUserCircle, TbShoppingCart, TbCrown } from 'react-icons/tb'
+import { TbMenu2, TbTruckDelivery, TbSearch, TbPackgeImport, TbHeart, TbUserCircle, TbShoppingCart} from 'react-icons/tb'
 import {AiOutlineCreditCard, AiOutlineSafety} from 'react-icons/ai'
 
+import MenuBarHeader from '../MenuBarHeader'
 
 export default function Header(){
+    const [visible, setVisible] = useState(false)
+
+    function handleShowMenu(){
+        if(visible === true ){
+            setVisible(false)            
+        }else{setVisible(true)
+        }
+    }       
+    
     return(
         <C.HeaderContainer>
             <C.InfoContainer>
@@ -18,14 +30,14 @@ export default function Header(){
                 <C.InfoHeader>
                     <TbTruckDelivery 
                         color='#9F9F9F' 
-                        size={20
-                    }/>
+                        size={20}
+                    />
                     <C.InfoText><C.InfoSpan>Frete Grátis</C.InfoSpan> acima de R$ 200</C.InfoText>
                 </C.InfoHeader>
 
                 <C.InfoHeader>
                     <AiOutlineCreditCard color='#9F9F9F' size={20}/>
-                    <C.InfoText>Compra <C.InfoSpan>100% segura</C.InfoSpan></C.InfoText>
+                    <C.InfoText>Parcele <C.InfoSpan>suas compras</C.InfoSpan></C.InfoText>
                 </C.InfoHeader>
             </C.InfoContainer>
 
@@ -46,20 +58,13 @@ export default function Header(){
                     <TbPackgeImport />                                         
                     <TbHeart />                    
                     <TbUserCircle />                   
-                    <TbShoppingCart />                                                         
+                    <TbShoppingCart />
+                    <button onClick={handleShowMenu}>
+                        <TbMenu2 /> 
+                    </button>                                                                            
                 </C.Toolbar> 
             </C.NavigationHeader>
-
-            <C.MenuHeader>
-                <C.Links>todas categorias</C.Links>
-                <C.Links>supermercado</C.Links>
-                <C.Links>livros</C.Links>
-                <C.Links>moda</C.Links>
-                <C.Links>lançamentos</C.Links>
-                <C.Links>ofertas do dia</C.Links>
-                <C.Links><TbCrown />assinatura</C.Links>
-            </C.MenuHeader>
-            
+            <MenuBarHeader showMenu={visible} />            
         </C.HeaderContainer>
     )
 }

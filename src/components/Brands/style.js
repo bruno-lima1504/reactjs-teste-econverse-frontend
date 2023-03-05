@@ -50,4 +50,8 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center; 
     transform: rotate(${props => props.rotate});
+
+    @media (max-width:500px) {
+        left: ${props => props.positionLeftResponsive};
+    }
 `

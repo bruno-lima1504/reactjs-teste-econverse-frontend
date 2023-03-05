@@ -29,21 +29,19 @@ export const Title = styled.h2`
             } 
             :after{
                 margin-left: 34px ;
-            }        
-       
-
-
+            }
+            
+    @media (max-width:1000px) {            
+            :before, :after {               
+                display: none;
+        }
+    }
 `
-
-export const ButtonsContainer = styled.div`
-    max-width: 1280px;
-    margin: auto;
-`
-export const Button = styled.button`
-    text-transform: uppercase;
-    width: 16.66%;
-    height: 40px;
-    color: #3B3B3B;
-    background-color: #FFFFFF;
-    border: 1px solid #BDBDBD
+export const Subtitle = styled.p`
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #3F3F40;
+    margin-bottom: 12px;
 `

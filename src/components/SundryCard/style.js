@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
     max-width: ${props => props.width};
-    height: ${props => props.height};  
+    max-height: ${props => props.height};  
     background-repeat: no-repeat;
      background: linear-gradient(
         rgba(0, 0, 0, 0), rgba(0, 0, 0, .8) 85.04%),
@@ -12,7 +12,12 @@ export const CardContainer = styled.div`
     background-size: cover;
     background-position: center;    
     border-radius: 20px;
-    padding:  20px 40px 10px;      
+    padding:  20px 40px 10px;
+    
+    @media (max-width:700px) {            
+             max-width: 350px;
+             margin: 20px auto;             
+        }
 `
 export const CardTitle = styled.p`
     color: #FFFFFF;

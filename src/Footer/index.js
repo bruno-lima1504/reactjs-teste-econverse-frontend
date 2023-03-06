@@ -6,6 +6,11 @@ import payment from '../assets/payments-method.png'
 import {FaFacebookF, FaInstagram, FaYoutube} from "react-icons/fa";
 
 export default function Footer(){
+
+    function handleSubmit(e){
+        e.preventDefault()
+    }
+
     return(
         <C.FooterContainer>
             <C.ContentContainer>
@@ -42,9 +47,9 @@ export default function Footer(){
                         Excepteur sint occaecat cudatat non ent,
                          sunt in culpa qui officia lorem ipsum
                     </C.NewsletterText>
-                    <C.NewsletterForm>
+                    <C.NewsletterForm onSubmit={handleSubmit}>
                         <C.InputEmail placeholder="SEU E-MAIL" type="text" />
-                        <C.SubmitButton>OK</C.SubmitButton>
+                        <C.SubmitButton >OK</C.SubmitButton>
                     </C.NewsletterForm>
                 </C.NewsletterContainer>
             </C.ContentContainer>

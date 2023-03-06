@@ -102,6 +102,9 @@ export const Input = styled.input`
     font-weight: 500;
     outline: 0;
     z-index: 1;
+    ::placeholder{
+        color: #9f9f9f;
+    }
 `
 
 export const SearchIcon = styled.a`

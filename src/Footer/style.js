@@ -185,6 +185,7 @@ export const SubmitButton = styled.button`
     margin-left: 10px;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 `
 
 

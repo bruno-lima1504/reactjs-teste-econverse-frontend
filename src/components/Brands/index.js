@@ -44,9 +44,9 @@ export default function BrandsCarousel(){
                 </C.Carousel>                          
                 <C.Button 
                     onClick={() => HandleScroll('right')}                    
-                    positionLeft="75%"
+                    positionLeft="88%"
                     rotate="0deg"
-                    positionLeftResponsive="80%"
+                    positionLeftResponsive="75%"
                 >
                     <img src={vector} alt="scroll Right" />
                 </C.Button>                          

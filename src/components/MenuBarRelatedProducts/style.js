@@ -1,7 +1,7 @@
 import styled
  from "styled-components"
 export const ButtonsContainer = styled.nav`
-    max-width: 100%;
+    width: 1280px;
     margin: auto;
     display: flex;
     

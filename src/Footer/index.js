@@ -10,25 +10,25 @@ export default function Footer(){
         <C.FooterContainer>
             <C.ContentContainer>
                 <C.AboutFooter>
-                    <C.Title>sobre nós</C.Title>
-                    <C.LinksFooter>conheça</C.LinksFooter>
-                    <C.LinksFooter>como chegar</C.LinksFooter>
-                    <C.LinksFooter>indicação e desconto</C.LinksFooter>
+                    <C.Title >sobre nós</C.Title>
+                    <C.LinksFooter href="#">conheça</C.LinksFooter>
+                    <C.LinksFooter href="#">como chegar</C.LinksFooter>
+                    <C.LinksFooter href="#">indicação e desconto</C.LinksFooter>
                     <C.IconstContainer>
-                        <FaFacebookF />
-                        <FaInstagram />
-                        <FaYoutube />
+                        <C.LinksFooter><FaFacebookF /></C.LinksFooter>
+                        <C.LinksFooter><FaInstagram /></C.LinksFooter>
+                        <C.LinksFooter><FaYoutube /></C.LinksFooter>
                     </C.IconstContainer>
                 </C.AboutFooter>
 
                 <C.InformationFooter>
                     <C.Title>informações úteis</C.Title>
-                    <C.LinksFooter>fale conosco</C.LinksFooter>
-                    <C.LinksFooter>dúvidas</C.LinksFooter>
-                    <C.LinksFooter>prazos de entrega</C.LinksFooter>
-                    <C.LinksFooter>formas de pagamento</C.LinksFooter>
-                    <C.LinksFooter>política de privacidade</C.LinksFooter>
-                    <C.LinksFooter>trocas e devoluções</C.LinksFooter>
+                    <C.LinksFooter href="#">fale conosco</C.LinksFooter>
+                    <C.LinksFooter href="#">dúvidas</C.LinksFooter>
+                    <C.LinksFooter href="#">prazos de entrega</C.LinksFooter>
+                    <C.LinksFooter href="#">formas de pagamento</C.LinksFooter>
+                    <C.LinksFooter href="#">política de privacidade</C.LinksFooter>
+                    <C.LinksFooter href="#">trocas e devoluções</C.LinksFooter>
                 </C.InformationFooter>                    
                 <C.PaymentFooter>
                     <C.Title>Formas de pagamento</C.Title>

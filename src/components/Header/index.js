@@ -9,13 +9,13 @@ import MenuBarHeader from '../MenuBarHeader'
 export default function Header(){
     const [visible, setVisible] = useState(false)
 
+    console.log(visible)
+
     function handleShowMenu(){
         if(visible === true ){
             setVisible(false)            
-        }else{setVisible(true)
-        }
-    }       
-    
+        }else{setVisible(true)}
+    }           
     return(
         <C.HeaderContainer>
             <C.InfoContainer>
@@ -64,7 +64,7 @@ export default function Header(){
                     </button>                                                                            
                 </C.Toolbar> 
             </C.NavigationHeader>
-            <MenuBarHeader showMenu={visible} />            
+            {visible ? (<MenuBarHeader />) : null}                      
         </C.HeaderContainer>
     )
 }

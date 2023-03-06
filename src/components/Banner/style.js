@@ -21,7 +21,7 @@ export const BannerTitle = styled.h3`
     font-size: 48px;
     line-height: 72px;
     max-width: 822px; 
-    @media (max-width:500px) {
+    @media (max-width:660px) {
         font-size: 24px;
         line-height: 35px;
     }
@@ -32,7 +32,7 @@ export const BannerText = styled.p`
     line-height: 54px;
     max-width: 389px;
     margin-bottom: 35px;
-    @media (max-width:500px) {
+    @media (max-width:660px) {
         font-size: 24px;
         line-height: 30px;
     }
@@ -47,4 +47,5 @@ export const PromoButton = styled.button`
     color: #FFFFFF;
     font-weight: 600;
     font-size: 18px;
+    cursor: pointer;
 `

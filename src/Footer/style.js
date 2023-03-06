@@ -29,18 +29,18 @@ export const ContentContainer = styled.div`
         justify-content: center;
     }
 `
-
 export const CopyRigthContainer = styled.div`
-    max-width: 1280px;
+    width: 100%;
     height: 70px;
     margin: auto;
-    display: flex;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     @media (max-width:500px) {
       height: auto;
-      flex-direction: column
+      flex-direction: column;
+      margin-bottom: 10px;
     } 
 `
 
@@ -50,6 +50,7 @@ export const AboutFooter = styled.div`
     margin-top: 60px;
     @media (max-width:500px) {
         margin-top: 20px;
+        align-items: center;
     }
    
 `
@@ -67,6 +68,11 @@ export const LinksFooter = styled.a`
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 12px;
+    color: #FFFFFF;
+
+    @media (max-width:500px) {
+        
+    }
 `
 export const IconstContainer = styled.div`
     display: flex;
@@ -79,6 +85,8 @@ export const IconstContainer = styled.div`
     }
     @media (max-width:500px) {
       margin-top: 20px;
+      width: 100%;
+      justify-content: space-around;
     }
 `
 
@@ -89,14 +97,17 @@ export const InformationFooter = styled.div`
 
         @media (max-width:500px) {
             margin-top: 25px;
+            align-items: center;
         }
 `
 export const PaymentFooter = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    
     @media (max-width:500px) {
       margin-top: 20px;
+      align-items: center;
     }
 `
 export const CopyRightText = styled.p`

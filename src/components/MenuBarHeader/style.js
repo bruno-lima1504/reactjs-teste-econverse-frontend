@@ -14,8 +14,6 @@ export const MenuHeader = styled.nav`
             height: auto;            
             padding: 5px 10px;            
             display: grid; 
-            grid-gap: 5px;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            display: ${props => props.visible ? 'none' : 'block' };
+            grid-gap: 5px; 
     }
 `

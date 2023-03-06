@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const CardContainer = styled.div`
     max-width: ${props => props.width};
     max-height: ${props => props.height};  
@@ -15,16 +14,23 @@ export const CardContainer = styled.div`
     padding:  20px 40px 10px;
     
     @media (max-width:700px) {            
-             max-width: 350px;
-             margin: 20px auto;             
+             max-width: 370px;
+             margin: 20px auto;
+             display:flex;
+             flex-direction:column;
+             padding: 15px;             
         }
 `
-export const CardTitle = styled.p`
+export const CardTitle = styled.h3`
     color: #FFFFFF;
     font-weight: 600;
     font-size: 40px;
     line-height: 60px;
     margin-top: ${props => props.title === 'Parceiros' ? '90px' : '45px'};
+    @media (max-width:700px) {            
+                margin-top: 20px;
+                font-size: 30px;
+        }
 `
 export const CardText = styled.p`
     color: #FFFFFF;
@@ -32,6 +38,9 @@ export const CardText = styled.p`
     line-height: 24px;    
     margin-bottom: 35px;
     max-width: 180px;
+    @media (max-width:700px) {
+                font-size: 12px;
+        }
 `
 
 export const PromoButton = styled.button`    

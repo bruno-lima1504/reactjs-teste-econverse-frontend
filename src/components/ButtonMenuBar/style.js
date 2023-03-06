@@ -14,8 +14,8 @@ export const Button = styled.button`
     border: 1px solid #BDBDBD;
 
     
-    @media (max-width:1280px) {            
-         width: 180px;
-        }
+     @media (max-width:600px) {            
+         margin-top: 10px;
+        } 
 
 `

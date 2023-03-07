@@ -26,7 +26,7 @@ O projeto foi realizao em componentes individualizados, separados por seções o
 
 ### Modal
 
-Ao clicar nos cards dos produtos presentes no carrosel ele abre um modal com a descrição do produto, e o mesmo pode ser fechado cliclando no botão "X" no canto superior direito, clicando fora da janela do produta ou pressionando a telca "ESC".
+Ao clicar nos cards dos produtos presentes no carrosel ele abre um modal com a descrição do produto, e o mesmo pode ser fechado cliclando no botão "X" no canto superior direito, clicando fora da janela do produto ou pressionando a telca "ESC".
 
 <img src="./src/assets/modalapresentation.gif" alt="Home Screen">
 <br />

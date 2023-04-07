@@ -22,7 +22,7 @@
 Projeto desenvolvido em <b>ReactJS</b> para realização do teste técnico da agência Econverse, nesse teste foi solicitado a apresentação de uma página Home de e-commerce com consumo de API para apresentação dos produtos, fornecida pela mesma, também foi solicitado que ao clicar nos cards dos produtos uma modal fosse aberta com detalhes do pruduto clicado. As solicitações foram todas atendidas assim como o designe solicitado.
 
 ## Funcionalidades:
-O projeto foi realizao em componentes individualizados, separados por seções o que facilita sua expanção como a sua manutenção. 
+O projeto foi realizao em componentes individualizados, separados por seções o que facilita sua expanção como a sua manutenção.
 
 ### Modal
 
@@ -61,7 +61,7 @@ O projeto foi estruturado para que seja facilmente implantadas outras páginas a
 
 ## Desenvolvido por:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/bruno-lima-9ba21b242/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-lima-9ba21b242/)
 
 | [<img src="	https://avatars.githubusercontent.com/u/102754701?s=96&v=4" width=115><br><sub>Bruno Lima</sub>](https://github.com/bruno-lima1504) 
 | :---: |
